@@ -10,7 +10,6 @@ public class Main {
         scanner.close();
     }
     
-    // Cargar algunos materiales iniciales para demostración
     private static void cargarMaterialesIniciales() {
         biblioteca.agregarMaterial(new Libro("El Quijote", "Miguel de Cervantes", 1605, "Novela", 863));
         biblioteca.agregarMaterial(new Libro("Cien años de soledad", "Gabriel García Márquez", 1967, "Realismo Mágico", 417));
@@ -20,7 +19,6 @@ public class Main {
         biblioteca.agregarMaterial(new Pelicula("Nosferatu", "F.W. Murnau", 1922, "F.W. Murnau", 81));
     }
     
-    // Menú principal interactivo
     private static void mostrarMenuPrincipal() {
         boolean salir = false;
         
@@ -55,7 +53,6 @@ public class Main {
         }
     }
     
-    // Obtener opción válida del usuario
     private static int obtenerOpcion() {
         try {
             return scanner.nextInt();
@@ -66,7 +63,6 @@ public class Main {
         }
     }
     
-    // Opción 1: Agregar material
     private static void agregarMaterial() {
         System.out.println("\n=== AGREGAR MATERIAL ===");
         System.out.println("Tipo de material:");
@@ -110,7 +106,6 @@ public class Main {
         }
     }
     
-    // Agregar libro
     private static void agregarLibro(String titulo, String autor, int ano) {
         System.out.print("Género: ");
         String genero = scanner.nextLine();

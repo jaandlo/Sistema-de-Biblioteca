@@ -25,7 +25,6 @@ public class Libro extends MaterialBibliografico {
 
     @Override
     public double calcularMultas(int diasRetraso) {
-        // Libro: 14 días de préstamo, $5000 por día de retraso
         if (diasRetraso <= 0) {
             return 0.0;
         }

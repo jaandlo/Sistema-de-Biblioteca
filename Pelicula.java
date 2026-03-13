@@ -1,6 +1,6 @@
 public class Pelicula extends MaterialBibliografico {
     private String director;
-    private int duracion; // Duración en minutos
+    private int duracion; 
 
 
     public Pelicula(String titulo, String autor, int anioPublicacion, String director, int duracion) {
@@ -22,12 +22,11 @@ public class Pelicula extends MaterialBibliografico {
     public void mostrarInformacion() {
         super.mostrarInformacion();
         System.out.println("Director: " + director);
-        System.out.println("Duración: " + duracion + " minutos");
+        System.out.println("Duracion: " + duracion + " minutos");
     }
 
     @Override
     public double calcularMultas(int diasRetraso) {
-        // Película: 3 días de préstamo, $10000 por día de retraso
         if (diasRetraso <= 0) {
             return 0.0;
         }

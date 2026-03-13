@@ -8,13 +8,13 @@ public class Biblioteca {
         this.materiales = new ArrayList<>();
     }
     
-    // Agregar material a la biblioteca
+
     public void agregarMaterial(MaterialBibliografico material) {
         materiales.add(material);
         System.out.println("Material agregado exitosamente.\n");
     }
     
-    // Listar todos los materiales usando polimorfismo
+
     public void listarMateriales() {
         if (materiales.isEmpty()) {
             System.out.println("La biblioteca no tiene materiales registrados.\n");
@@ -31,7 +31,7 @@ public class Biblioteca {
         }
     }
     
-    // Calcular multa para un material específico
+   
     public void calcularMultaMaterial(int indice, int diasRetraso) {
         if (indice < 0 || indice >= materiales.size()) {
             System.out.println("Material no encontrado.\n");
@@ -49,7 +49,6 @@ public class Biblioteca {
         System.out.println("Multa total: $" + String.format("%.0f", multa) + "\n");
     }
     
-    // Calcular multas para todos los materiales
     public void calcularMultasTodos(int diasRetraso) {
         if (materiales.isEmpty()) {
             System.out.println("No hay materiales en la biblioteca.\n");
@@ -71,7 +70,6 @@ public class Biblioteca {
         System.out.println("Total de multas: $" + String.format("%.0f", multaTotal) + "\n");
     }
     
-    // Obtener cantidad de materiales
     public int getCantidadMateriales() {
         return materiales.size();
     }
